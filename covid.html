@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<br><br><br>
+<header>COVID CASE TRACKER</header>
+<br><br><br>
+
+<style>
+    header {font-size: 35pt;text-align:center;}
+    body {background-color:rgb(196, 195, 195)}
+
+    #country {text-align:center;position:relative;
+              border-radius: 10px;float:center; font-size:20pt; width:280px;left: 50%;
+              margin-left: -100px;}
+
+    #parent {
+        white-space: nowrap; overflow-x: auto;
+    }          
+    
+    p { display: inline-block;text-align:center;font-family:Helvetica, sans-serif;width:430px;height:90px;background-color: black;margin-left: 10px;border-radius: 30px;color:aliceblue; font-size: 20pt;}          
+    
+    h2 {color:black;display: inline-block;text-align:center;font-family:Helvetica, sans-serif;width:430px;height:90px;background-color: whitesmoke;margin-left: 10px;border-radius: 30px; font-size: 40pt;}
+    
+</style>
+
+<select name="country" id="country"  > 
+    <option  value="" >SELECT COUNTRY</option>
+
+    <option id="US" value="US" >US</option>
+    <option id="FRA" value="FR">FR</option>
+    <option id="FRA" value="US-CA">US-CA</option>
+</select>
+<br><br><br><br>
+
+<body>
+ <div id="parent">
+   <p><br>TOTAL CONFIRMED CASES</p>
+   <p><br>TOTAL DEATHS</p>
+   <p><br>TOTAL RECOVERED CASES</p>
+</div>  
+
+<div id="parent">
+    <h2 id="id"><br></h2>
+    <h2 id="id2"><br></h2>
+    <h2 id="id3"><br></h2>
+ </div>   
+    <script src="covid.js"></script>
+  
+
+  <div id="parent">
+      <p><br>NEWLY CONFIRMED CASES</p>
+      <p><br>NEW DEATHS</p>
+      <p><br>NEWLY RECOVERED CASES</p>
+  </div>
+  <div id="parent">
+    <h2 id="id4"><br></h2>
+    <h2 id="id5"><br></h2>
+    <h2 id="id6"><br></h2>
+ </div>  
+</body>
+</html>
